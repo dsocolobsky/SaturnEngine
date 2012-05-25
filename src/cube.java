@@ -19,12 +19,22 @@ public class cube {
         GL11.glEnd();
 	}
 	
-	public void changeColor(float color1, float color2, float color3)
+	public void changeAdvancedColor(float color1, float color2, float color3)
 	{
 		GL11.glColor3f(color1,color2,color3);
 	}
 	
+	public void changeColor(String colorName)
+	{
+		switch(colorName)
+		{
+			case "green": {GL11.glColor3f(0.5f,4.5f,0.0f); break;}
+			case "pink": {GL11.glColor3f(2.5f,0.5f,1.0f); break;}
+			case "cyan": {GL11.glColor3f(0.5f,2.5f,1.0f); break;}
+			
+	}
 	
 	
 	
+	}
 }

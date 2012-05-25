@@ -60,22 +60,22 @@ public class MainGame {
 	    if (Keyboard.getEventKeyState()) {
 	        if (Keyboard.getEventKey() == Keyboard.KEY_W) {
 		    System.out.println("W Key Pressed");
-		    cube1.changeColor(2.5f,0.5f,1.0f);
+		    cube1.changeColor("green");
 		}
 	        
 		if (Keyboard.getEventKey() == Keyboard.KEY_A) {
 		    System.out.println("A Key Pressed");
-		   cube1.changeColor(0.5f,2.5f,1.0f);
+		   cube1.changeColor("pink");
 		}
 		
 		if (Keyboard.getEventKey() == Keyboard.KEY_S) {
 		    System.out.println("S Key Pressed");
-		    cube1.changeColor(0.5f,4.5f,0.0f);
+		    cube1.changeColor("cyan");
 		}
 		
 		if (Keyboard.getEventKey() == Keyboard.KEY_D) {
 		    System.out.println("D Key Pressed");
-		    cube1.changeColor(0.5f,4.5f,0.0f);
+		    cube1.changeColor("cyan");
 		}
 		
 		
@@ -84,22 +84,22 @@ public class MainGame {
 	    	// Key released code goes here:
 	        if (Keyboard.getEventKey() == Keyboard.KEY_W) {
 		    System.out.println("W Key Released");
-		    GL11.glColor3f(2.5f,0.5f,1.0f);
+		    cube1.changeColor("green");
 	        }
 	        
 	    	if (Keyboard.getEventKey() == Keyboard.KEY_A) {
 		    System.out.println("A Key Released");
-		    GL11.glColor3f(0.5f,2.5f,1.0f);
+		    cube1.changeColor("pink");
 		}
 	    	
 		if (Keyboard.getEventKey() == Keyboard.KEY_S) {
 		    System.out.println("S Key Released");
-		    GL11.glColor3f(0.5f,4.5f,0.0f);
+		    cube1.changeColor("cyan");
 		}
 		
 		if (Keyboard.getEventKey() == Keyboard.KEY_D) {
 		    System.out.println("D Key Released");
-		    GL11.glColor3f(0.5f,4.5f,0.0f);
+		    cube1.changeColor("cyan");
 		}
 		
 	    }
