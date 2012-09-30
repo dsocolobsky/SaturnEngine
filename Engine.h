@@ -1,5 +1,7 @@
-// Engine.h : Class for the Engine that powers the game
+#ifndef ENGINE_H
+#define ENGINE_H
 
+// Engine.h : Class for the Engine that powers the game
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 
@@ -20,3 +22,5 @@ public:
 
 	void go(); // Starts and runs the engine
 };
+
+#endif

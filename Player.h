@@ -1,4 +1,6 @@
-#pragma once
+#ifndef PLAYER_H
+#define PLAYER_H
+
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 
@@ -9,7 +11,7 @@ public:
 	sf::RectangleShape right;
 	sf::RectangleShape bottom;
 
-	top.setPosition(borderSize, 0);
+	//top.setPosition(borderSize, 0);
 
 	int x;
 	int y;
@@ -17,3 +19,5 @@ public:
 	Player(int px, int py);
 	~Player(void);
 };
+
+#endif
